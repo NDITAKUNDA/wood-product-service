@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | BioCWT</title>
+    <!-- Link for the css file -->
+    <link rel="stylesheet" href="/css/styles.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Link for the google fonts used -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Area-->
+    <nav class="flex flex-row space-between align-center desktop-nav" id="navbar">
+        <a class="nav-image" href="/index.html"><img src="/assets/logo/logo-white.png" alt="BioCWT Logo"></a>
+        <ul class="flex flex-row">
+            <li><a class="font-montserrat disabled-link" href="/gallery.html">Gallery</a></li>
+            <li><a class="font-montserrat disabled-link" href="/prices.html">Price for Services</a></li>
+            <li><a class="font-montserrat disabled-link" href="/about.html">About us</a></li>
+            <li><a class="font-montserrat" href="/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <nav class="flex flex-row space-between align-center mobile-nav" id="mobile-nav">
+        <a href="/" class="nav-image">
+            <img src="/assets/logo/logo-white.png" alt="">
+        </a>
+        <input type="checkbox" id="check">
+        <label id="btn" for="check" class="checkbox flex flex-column">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <ul class="flex flex-column">
+            <li><a class="font-montserrat disabled-link" href="/gallery.html">Gallery</a></li>
+            <li><a class="font-montserrat disabled-link" href="/prices.html">Price for Services</a></li>
+            <li><a class="font-montserrat disabled-link" href="/about.html">About us</a></li>
+            <li><a class="font-montserrat" href="/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero">
+        <article class="main-screen flex flex-row align-left space-between">
+            <div class="main-details">
+                <h2 class="font-kyiv">SOLID<br>WOOD<br>PRODUCTS</h2>
+                <p class="font-inter">
+                    Oak, beech, ash<br>from $1200 per m3
+                </p>
+                <button class="font-montserrat">Order</button>
+            </div>
+            <div class="main-images flex flex-row space-between">
+                <div class="image-card a"></div>
+                <div>
+                    <div class="image-card b"></div>
+                <div class="image-card c"></div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <!-- Gallery Section -->
+    <section class="gallery section-large">
+        <h2 class="font-kyiv">THE WOOD WE WORK WITH</h2>
+        <div class="container flex flex-row">
+            <div class="gallery-item flex flex-column align-center" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1600">
+                <div class="image-card a"></div>
+                <h3 class="font-montserrat ">Oak</h3>
+                <ul class="tick-list font-inter">
+                    <li>Durability</li>
+                    <li>Long Lasting</li>
+                    <li>Water resistance</li>
+                    <li class="a">Expensive</li>
+                  </ul>
+            </div>
+            <div class="gallery-item flex flex-column align-center" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1800">
+                <div class="image-card b"></div>
+                <h3 class="font-montserrat ">Buk</h3>
+                <ul class="tick-list font-inter">
+                    <li>Durability</li>
+                    <li class="a">Hard to handle</li>
+                  </ul>
+            </div>
+            <div class="gallery-item flex flex-column align-center" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <div class="image-card c"></div>
+                <h3 class="font-montserrat ">Ash</h3>
+                <ul class="tick-list font-inter">
+                    <li>Durability</li>
+                    <li class="a">Hard to handle</li>
+                  </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Advantages Section -->
+    <section class="advantages section-large">
+        <h2 class="font-kyiv" data-aos="fade-up"
+        data-aos-duration="3000">ADVANTAGES OF WORKING WITH US</h2>
+        <div class="container flex flex-row align-center" data-aos="fade-up"
+        data-aos-duration="3000">
+            <div class="advantage-image image-card"></div>
+            <div>
+                <p class="font-inter">
+                    In-house carpentry production
+                </p>
+                <p class="font-inter">
+                    We only treat wood with enviromental friendly and safe products.
+                </p>
+                <p class="font-inter">
+                    Prices from manufacturer, with no extra charges
+                </p>
+            </div>
+        </div>
+        <button class="font-montserrat">Recieve a consultation</button>
+    </section>
+    <!-- About Section -->
+    <section class="about">
+        <article class="flex flex-row align-left space-between">
+            <div class="main-details">
+                <h2 class="font-kyiv">ABOUT US</h2>
+                <p class="font-inter">
+                    BIO CWT  - We manufacture solid wood products according to individual 
+                    drawings. We make chairs, armchairs, wardrobes, beds and much more in 
+                    our own workshop, equipped with all the necessary industrial equipment.
+                </p>
+            </div>
+            <div class="about-images">
+                <div class="image-card a"></div>
+                <div class="image-card c"></div>
+                <div class="image-card b"></div>
+            </div>
+        </article>
+    </section>
+    <!-- Contact Section -->
+    <section class="contact flex flex-column align-center">
+        <h2 class="font-kyiv">ANY QUESTIONS?</h2>
+        <div class="flex flex-row space-between">
+            <form action="#" class="flex flex-column align-left">
+                <input class="font-inter" type="text" name="name" placeholder="Your name" required/>
+                <input class="font-inter" type="tel" name="tel" placeholder="Your telephone number" required/>
+                <textarea class="font-inter" name="message" cols="20" rows="5" placeholder="Your message"></textarea>
+                <button class="font-montserrat">SEND</button>
+            </form>
+            <div class="contact-details">
+                <p class="font-inter">
+                    Write to us and we will be sure to answer all your questions and give you
+                    a comprehensive consultation.
+                </p>
+            </div>
+        </div>
+        <div class="contact-image">
+            <img src="/assets/background/contact.png" alt="">
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="flex flex-column">
+        <div class="flex flex-row align-left space-between">
+            <img src="/assets/logo/logo-white.png" alt="">
+            <p class="font-inter flex flex-row align-center">
+                <i><img src="/assets/logo/phone.png" alt=""></i>+263 123 456 789
+            </p>
+            <p class="font-inter flex flex-row align-center">
+                <i><img src="/assets/logo/location.png" alt=""></i>No. 6 Street, City
+            </p>
+        </div>
+        <div class="policy">
+            <a class="font-inter" href="#">Privacy Policy</a>
+        </div>
+        <p class="font-inter" style="margin-top: 20px; text-align: center;">
+            Copyright &copy;  
+                <script>document.write(new Date().getFullYear());</script>. 
+                All Rights Reserved. &mdash; Designed by <a href="https://www.instagram.com/daria.korkishko" style="color: #728BAD;">Daria Korkishko</a> Developed by  <a href="https://www.takundanyanara.co.zw" style="color: #728BAD;">Takunda Nyan'ara</a>
+        </p>
+    </footer>
+
+    <!-- Links for the js -->
+    <script src="/js/script.js"></script>
+    <!-- Link for the aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+/* Tablet Styles */
+@media screen and (max-width: 900px) {
+    /* Generic Classes */
+    .section-large, footer {
+        padding-inline: 20px;
+    }
+    .section-large {
+        margin: 30px auto;
+        color: #f5f5f5;
+    }
+    nav .nav-image, footer img {
+        width: 120px;
+        height: 50px;
+    }
+    /* Navigation Styles */
+    nav .nav-image {
+        margin-inline: 30px;
+    }
+    nav ul {
+        margin-right: 30px;
+    }
+    nav ul li {
+        margin-inline: 8px;
+    }
+    /* Hero Styles */
+    .hero {
+        background-size: 80% 100%;
+    }
+    .hero .main-screen {
+        width: 60%;
+        top: 10%;
+        left: 40%;
+        right: 0;
+        flex-direction: column;
+    }
+    .hero .main-screen .main-details {
+        padding-right: 0;
+        border-right: 0;
+        padding-bottom: 40px;
+        border-bottom: 2px solid #f5f5f5;
+    }
+    .hero .main-images .image-card.a {
+        margin-top: 0;
+    }
+    .hero .main-images .image-card.b , .hero .main-images .image-card.c {
+        display: none;
+    }
+    /* About Styles */
+    .about article {
+        padding-inline: 40px;
+        flex-direction: column;
+        height: 850px;
+    }
+    /* Contact Styles */
+    section.contact div.flex {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .contact form {
+        width: fit-content;
+    }
+    .contact p {
+        text-align: left;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .contact .contact-image {
+        display: none;
+    }
+}
+/* Mobile Styles */
+@media (max-width: 600px) {
+    /* Generic Styles */
+    section .container, footer div.flex, footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    /* Navigation Styles */
+    nav.desktop-nav {
+        display: none;
+    }
+    nav.mobile-nav {
+        left: 0;
+        display: flex;
+    }
+    nav .nav-image {
+        margin-inline: 30px;
+        width: 100px;
+        height: 50px;
+    }
+    nav.mobile-nav .checkbox {
+        width: 60px;
+        height: 60px;
+        margin-right: 30px;
+    }
+    nav.mobile-nav .checkbox span {
+        width: 80%;
+        height: 5px;
+        margin: 10%;
+        background-color: white;
+        transition: color 0.3s ease-in-out, transform 0.3s ease-in-out, width 0.3s ease-in-out;
+    }
+    nav.mobile-nav ul {
+        position: fixed;
+        width: 100dvw;
+        height: 50vh;
+        background-color: #1E0C06;
+        top: 100px;
+        left: -100%;
+        text-align: center;
+        justify-content: space-around;
+        z-index: 2;
+        transition: left 0.3s ease-in-out;
+    }
+    nav.mobile-nav ul li a {
+        color: #f2f2f2;
+    }
+    nav.mobile-nav #check:checked ~ ul{
+        left: 0px;
+    }
+    nav.mobile-nav #check:checked ~ .checkbox span:nth-child(1) {
+        width: 80%;
+        transform: rotate(30deg) translateY(14px) translateX(8px);
+    }
+    nav.mobile-nav #check:checked ~ .checkbox span:nth-child(2) {
+        background-color: transparent;
+    }
+    nav.mobile-nav #check:checked ~ .checkbox span:nth-child(3) {
+        width: 80%;
+        transform: rotate(-30deg) translateY(-14px) translateX(8px);
+    }
+    nav.mobile-nav input#check {
+        display: none;
+    }
+    /* Hero Styles */
+    .hero {
+        background-size: 100% 100%;
+        height: 80dvh;
+    }
+    .hero .main-screen {
+        top: 22%;
+    }
+    .hero .main-images {
+        display: none;
+    }
+    /* About Styles */
+    .advantages .advantage-image {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    /* About Styles */
+    .about article {
+        border-radius: 0;
+        padding: 0;
+        width: 100dvw;
+        padding-bottom: 30px;
+        height: fit-content;
+    }
+    .about h2, .about p.font-inter {
+        margin-left: 10px;
+        width: 70%;
+    }
+    .about .about-images {
+        display: none;
+    }
+    /* Contact Styles */
+    .contact .form, .contact p {
+        width: 320px;
+    }
+    /* Footer Styles */
+    footer img {
+        margin-bottom: 10px;
+    }
+    
+
+    /* CONTACT PAGE STYLES */
+    .map-container {
+        width: 300px;
+        height: 300px;
+        margin: 100px auto;
+    }
+}

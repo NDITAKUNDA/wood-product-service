@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | BioCWT</title>
+    <!-- Link for the css file -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/laptop.css">
+    <link rel="stylesheet" href="/css/mobile.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Link for the google fonts used -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation Area-->
+    <nav class="flex flex-row space-between align-center desktop-nav scrolled" id="navbar">
+        <a class="nav-image" href="/index.html"><img src="/assets/logo/logo-white.png" alt="BioCWT Logo"></a>
+        <ul class="flex flex-row">
+            <li><a class="font-montserrat disabled-link" href="/gallery.html">Gallery</a></li>
+            <li><a class="font-montserrat disabled-link" href="/prices.html">Price for Services</a></li>
+            <li><a class="font-montserrat disabled-link" href="/about.html">About us</a></li>
+            <li><a class="font-montserrat" href="/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <nav class="flex flex-row space-between align-center mobile-nav scrolled" id="mobile-nav">
+        <a href="/" class="nav-image">
+            <img src="/assets/logo/logo-white.png" alt="">
+        </a>
+        <input type="checkbox" id="check">
+        <label id="btn" for="check" class="checkbox flex flex-column">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <ul class="flex flex-column">
+            <li><a class="font-montserrat disabled-link" href="/gallery.html">Gallery</a></li>
+            <li><a class="font-montserrat disabled-link" href="/prices.html">Price for Services</a></li>
+            <li><a class="font-montserrat disabled-link" href="/about.html">About us</a></li>
+            <li><a class="font-montserrat" href="/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Google Maps Intergration Section -->
+    <section class="maps flex flex-row align-center">
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d133258.6658790195!2d31.038106319187563!3d-17.81546655761586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1931a4ee1bdddb35%3A0xa5143b9be5134f2f!2sHarare!5e0!3m2!1sen!2szw!4v1712518010022!5m2!1sen!2szw" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="contact flex flex-column align-center">
+        <h2 class="font-kyiv">ANY QUESTIONS?</h2>
+        <div class="flex flex-row space-between">
+            <form action="#" class="flex flex-column align-left">
+                <input class="font-inter" type="text" name="name" placeholder="Your name" required />
+                <input class="font-inter" type="tel" name="tel" placeholder="Your telephone number" required />
+                <textarea class="font-inter" name="message" cols="20" rows="5" placeholder="Your message"></textarea>
+                <button class="font-montserrat">SEND</button>
+            </form>
+            <div class="contact-details">
+                <p class="font-inter">
+                    Write to us and we will be sure to answer all your questions and give you
+                    a comprehensive consultation.
+                </p>
+            </div>
+        </div>
+        <div class="contact-image">
+            <img src="/assets/background/contact.png" alt="">
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="flex flex-column">
+        <div class="flex flex-row align-left space-between">
+            <img src="/assets/logo/logo-white.png" alt="">
+            <p class="font-inter flex flex-row align-center">
+                <i><img src="/assets/logo/phone.png" alt=""></i>+263 123 456 789
+            </p>
+            <p class="font-inter flex flex-row align-center">
+                <i><img src="/assets/logo/location.png" alt=""></i>No. 6 Street, City
+            </p>
+        </div>
+        <div class="policy">
+            <a class="font-inter" href="#">Privacy Policy</a>
+        </div>
+        <p class="font-inter" style="margin-top: 20px; text-align: center;">
+            Copyright &copy;  
+                <script>document.write(new Date().getFullYear());</script>. 
+                All Rights Reserved. &mdash; Designed by <a href="https://www.instagram.com/daria.korkishko" style="color: #728BAD;">Daria Korkishko</a> Developed by  <a href="https://www.takundanyanara.co.zw" style="color: #728BAD;">Takunda Nyan'ara</a>
+        </p>
+    </footer>
+
+    <!-- Links for the js -->
+    <script src="/js/script.js"></script>
+    <!-- Link for the aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

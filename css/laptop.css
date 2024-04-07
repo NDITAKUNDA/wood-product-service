@@ -1,0 +1,30 @@
+/* Styles for the laptops only */
+@media screen and (min-width: 1000px) {
+    nav ul li a:hover {
+        border-bottom: 2px solid #f3f3f3;
+    }
+    button:hover {
+        background-color: #f5f5f5;
+        color: #728BAD;
+        border: 2px solid #728BAD;
+        cursor: pointer;
+    }
+}
+@media screen and (min-width: 1600px) {
+    section, footer {
+        width: 1300px;
+        margin: 20px auto;
+    }
+    section.hero {
+        width: 100dvw;
+    }
+    section.hero .main-screen {
+        width: 1000px;
+    }
+    nav .nav-image {
+        margin-left: 300px;
+    }
+    nav ul {
+        margin-right: 300px;
+    }
+}
